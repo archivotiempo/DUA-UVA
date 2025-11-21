@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad DUA - Enriquecimiento Multimodal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div id="navTitle" class="nav-title" style="cursor:pointer;">Actividad DUA - Enriquecimiento Multimodal</div>
+            <div class="nav-controls">
+                <button id="prevBtn" class="nav-btn"><i class="fas fa-chevron-left"></i></button>
+                <span id="slideCounter" class="slide-counter">1 / 9</span>
+                <button id="nextBtn" class="nav-btn"><i class="fas fa-chevron-right"></i></button>
+                <button id="fullscreenBtn" class="nav-btn"><i class="fas fa-expand"></i></button>
+          </div>
+        </div>
+    </nav>
+
+    <!-- Contenedor principal de diapositivas -->
+    <div class="slides-container">
+        <!-- Diapositiva 1: Portada -->
+        <div class="slide active" id="slide-1">
+            <div class="slide-content portada" aria-label="Diapositiva 1: Portada" role="region">
+                <div class="logos-header">
+                    <div class="master-info">MicroCredencial - Materiales Didácticos con IA</div>
+                </div>
+                <div class="title-section">
+                    <h1 class="main-title"><i class="fas fa-magic"></i> ENRIQUECIMIENTO MULTIMODAL</h1>
+                    <h2 class="subtitle">Actividad DUA: Múltiples medios de representación</h2>
+                    <div class="project-title">Basado en el TFM: "APRENDER HACIENDO: El uso de Escape Rooms para el desarrollo de competencias STEAM en alumnos con discapacidad intelectual"</div>
+                    <div class="project-title" style="margin-top: 1rem; font-size: 1.1rem; color: #b7aaff;">
+                        Narrativa: "El archivo de la historia: un viaje a través del tiempo"
+                    </div>
+                    <div style="margin-top: 1.5rem; text-align: center;">
+                        <a href="https://archivotiempo.github.io/defensa.github.io/" target="_blank" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.8rem 1.5rem; background: rgba(120, 119, 198, 0.2); border: 2px solid #b7aaff; border-radius: 12px; color: #b7aaff; text-decoration: none; font-size: 0.95rem; font-weight: 600; transition: all 0.3s ease;">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span>Ver presentación completa del TFM</span>
+                        </a>
+                    </div>
+                    <div class="author-info">
+                        <div class="info-card">
+                            <i class="fas fa-robot"></i>
+                            <p><strong>Herramienta IAG:</strong> ChatGPT</p>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-universal-access"></i>
+                            <p><strong>Principio DUA:</strong> Múltiples medios de representación</p>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-graduation-cap"></i>
+                            <p><strong>Objetivo:</strong> Enriquecer contenido didáctico con recursos multimodales</p>
+      </div>
+      </div>
+    </div>
+            </div>
+          </div>
+
+        <!-- Diapositiva 2: Índice -->
+        <div class="slide" id="slide-2">
+            <div class="slide-content" aria-label="Diapositiva 2: Índice" role="region">
+                <h2 class="slide-title"><i class="fas fa-list-ul"></i> Índice de la presentación</h2>
+                <div class="index-grid" style="grid-template-columns: repeat(3, 1fr);">
+                    <div class="index-card" onclick="goToSlide(3)"><i class="fas fa-book-open"></i> Curso y materia</div>
+                    <div class="index-card" onclick="goToSlide(4)"><i class="fas fa-file-alt"></i> Texto original</div>
+                    <div class="index-card" onclick="goToSlide(5)"><i class="fas fa-book-reader"></i> Versión adaptada</div>
+                    <div class="index-card" onclick="goToSlide(6)"><i class="fas fa-headphones"></i> Recurso 1: Audio</div>
+                    <div class="index-card" onclick="goToSlide(7)"><i class="fas fa-image"></i> Recurso 2: Infografía</div>
+                    <div class="index-card" onclick="goToSlide(8)"><i class="fas fa-table"></i> Recurso 3: Tabla</div>
+                    <div class="index-card" onclick="goToSlide(9)" style="grid-column: 2;"><i class="fas fa-check-circle"></i> Resumen</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Diapositiva 3: Curso y materia -->
+        <div class="slide" id="slide-3">
+            <div class="slide-content" aria-label="Diapositiva 3: Curso y materia" role="region">
+                <h2 class="slide-title"><i class="fas fa-book-open"></i> Curso y materia / área</h2>
+                <div class="metodologia-grid-top" style="margin-top: 2rem;">
+                    <div class="metodologia-card enfoque">
+                        <h3><i class="fas fa-users"></i> Etapa / contexto</h3>
+                        <p>Formación de personas adultas con discapacidad intelectual<br>(AFANIAS / centro ocupacional)</p>
+                    </div>
+                    <div class="metodologia-card analisis">
+                        <h3><i class="fas fa-flask"></i> Materia / ámbito</h3>
+                        <p>Ámbito científico-tecnológico · <strong>STEAM</strong><br>(Ciencia, Tecnología, Ingeniería, Arte y Matemáticas)</p>
+                    </div>
+                </div>
+                <div class="metodologia-grid-top" style="margin-top: 1.5rem;">
+                    <div class="metodologia-card enfoque">
+                        <h3><i class="fas fa-folder-open"></i> Unidad de trabajo</h3>
+                        <p><em>"El archivo de la historia: 8 eras, 8 desafíos STEAM"</em></p>
+                    </div>
+                    <div class="metodologia-card analisis">
+                        <h3><i class="fas fa-tasks"></i> Actividad concreta</h3>
+                        <p>Presentación introductoria a la experiencia de escape room inclusivo</p>
+                    </div>
+                </div>
+                <div class="contexto-destacado" style="margin-top: 2rem;">
+                    <div class="contexto-item">
+                        <i class="fas fa-info-circle"></i>
+                        <strong>Esta actividad parte de uno de los núcleos conceptuales del TFM, adaptado a un contexto de aula.</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Diapositiva 4: Texto original -->
+        <div class="slide" id="slide-4">
+            <div class="slide-content" aria-label="Diapositiva 4: Texto original" role="region">
+                <h2 class="slide-title"><i class="fas fa-file-alt"></i> Texto o explicación original</h2>
+                
+                <div style="margin-top: 2rem;">
+                    <h3 class="datos-title" style="text-align: center; margin-bottom: 2rem;"><i class="fas fa-book"></i> Versión original pensada para el alumnado</h3>
+                    
+                    <div class="legal-content" style="text-align: left; max-width: 900px; margin: 0 auto;">
+                        <div class="legal-item" style="margin-bottom: 1.5rem; padding: 1.5rem; background: rgba(120, 119, 198, 0.1); border-radius: 12px; border-left: 4px solid #b7aaff;">
+                            <i class="fas fa-quote-left" style="color: #b7aaff; font-size: 2rem; float: left; margin-right: 1rem; margin-top: 0.5rem;"></i>
+                            <span style="display: block; font-size: 1.05rem; line-height: 1.7;">Hoy vamos a entrar en <strong>"El archivo de la historia"</strong>, un lugar donde se guardan secretos de muchas épocas diferentes. Tenemos delante una serie de cajas y retos que representan <strong>8 eras históricas</strong>: los dinosaurios, la Edad de Piedra, la Edad de los Metales, la Edad Antigua, la Edad Media, la Edad Moderna, la Edad Contemporánea y la Era Digital.</span>
+                        </div>
+                        
+                        <div class="legal-item" style="margin-bottom: 1.5rem; padding: 1.5rem; background: rgba(120, 119, 198, 0.1); border-radius: 12px; border-left: 4px solid #b7aaff;">
+                            <i class="fas fa-quote-left" style="color: #b7aaff; font-size: 2rem; float: left; margin-right: 1rem; margin-top: 0.5rem;"></i>
+                            <span style="display: block; font-size: 1.05rem; line-height: 1.7;">En cada era habrá un <strong>desafío STEAM</strong>: tendremos que observar, experimentar, usar números, formas, colores y también crear. A veces trabajaremos con materiales, otras con tarjetas o puzzles. Siempre lo haremos en <strong>equipo</strong>, hablando y tomando decisiones juntos.</span>
+                        </div>
+                        
+                        <div class="legal-item" style="margin-bottom: 1.5rem; padding: 1.5rem; background: rgba(120, 119, 198, 0.1); border-radius: 12px; border-left: 4px solid #b7aaff;">
+                            <i class="fas fa-quote-left" style="color: #b7aaff; font-size: 2rem; float: left; margin-right: 1rem; margin-top: 0.5rem;"></i>
+                            <span style="display: block; font-size: 1.05rem; line-height: 1.7;">Cada vez que superemos un reto, desbloquearemos una parte del archivo y avanzaremos en nuestro viaje en el tiempo. El objetivo no es hacerlo perfecto, sino <strong>probar ideas, colaborar y aprender</strong> de cada prueba.</span>
+                        </div>
+                        
+                        <div class="legal-item" style="padding: 1.5rem; background: rgba(120, 119, 198, 0.1); border-radius: 12px; border-left: 4px solid #b7aaff;">
+                            <i class="fas fa-quote-left" style="color: #b7aaff; font-size: 2rem; float: left; margin-right: 1rem; margin-top: 0.5rem;"></i>
+                            <span style="display: block; font-size: 1.05rem; line-height: 1.7;">Yo estaré acompañando el proceso, explicando de nuevo todo lo que haga falta y adaptando los materiales para que todas las personas podáis participar, cada una con sus fortalezas.</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="legal-highlight" style="margin-top: 2rem;">
+                    <i class="fas fa-info-circle"></i>
+                    <span>Este texto resume la narrativa de la presentación del <strong>TFM</strong> y se utiliza como <strong>explicación oral base</strong> a partir de la cual se generarán los recursos multimodales.</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Diapositiva 5: Versión adaptada en lectura fácil -->
+        <div class="slide" id="slide-5">
+            <div class="slide-content" aria-label="Diapositiva 5: Versión adaptada" role="region">
+                <h2 class="slide-title"><i class="fas fa-book-reader"></i> Versión en lectura fácil (adaptada con ChatGPT)</h2>
+                
+                <div style="margin-top: 2rem;">
+                    <div style="text-align: center; margin-bottom: 2rem; padding: 1rem; background: rgba(56, 189, 248, 0.1); border-radius: 12px; border: 2px dashed rgba(56, 189, 248, 0.4);">
+                        <p style="margin: 0; color: #e0e0ff; font-size: 1.05rem;">
+                            <i class="fas fa-robot"></i> Esta versión se adapta con apoyo de <strong>ChatGPT</strong> a un registro de <strong>lectura fácil</strong>, para alumnado con discapacidad intelectual.
+            </p>
+          </div>
+                    
+                    <div style="margin-bottom: 2rem;">
+                        <h3 class="datos-title" style="text-align: center; margin-bottom: 1.5rem;"><i class="fas fa-history"></i> Vamos a viajar en el tiempo por diferentes épocas:</h3>
+                        
+                        <div class="adaptaciones-steam-grid-3col" style="grid-template-columns: repeat(2, 1fr); gap: 1rem;">
+                            <div class="adaptacion-steam-card">
+                                <i class="fas fa-bone" style="color: #ff77c6;"></i>
+                                <div class="adaptacion-steam-title">Época de los dinosaurios</div>
+                            </div>
+                            <div class="adaptacion-steam-card">
+                                <i class="fas fa-fire" style="color: #ff77c6;"></i>
+                                <div class="adaptacion-steam-title">Edad de Piedra y Edad de los Metales</div>
+                            </div>
+                            <div class="adaptacion-steam-card">
+                                <i class="fas fa-landmark" style="color: #ff77c6;"></i>
+                                <div class="adaptacion-steam-title">Edad Antigua</div>
+                            </div>
+                            <div class="adaptacion-steam-card">
+                                <i class="fas fa-chess-rook" style="color: #ff77c6;"></i>
+                                <div class="adaptacion-steam-title">Edad Media</div>
+                            </div>
+                            <div class="adaptacion-steam-card">
+                                <i class="fas fa-microscope" style="color: #ff77c6;"></i>
+                                <div class="adaptacion-steam-title">Edad Moderna</div>
+                            </div>
+                            <div class="adaptacion-steam-card">
+                                <i class="fas fa-industry" style="color: #ff77c6;"></i>
+                                <div class="adaptacion-steam-title">Edad Contemporánea</div>
+                            </div>
+                            <div class="adaptacion-steam-card" style="grid-column: 1 / -1;">
+                                <i class="fas fa-laptop-code" style="color: #ff77c6;"></i>
+                                <div class="adaptacion-steam-title">Era Digital</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="padding: 1.5rem; background: rgba(34, 197, 94, 0.1); border-radius: 12px; border-left: 4px solid #22c55e; margin-top: 1.5rem;">
+                        <p style="margin: 0; color: #e0e0ff; font-size: 1.05rem; line-height: 1.7;">
+                            <strong>En cada época habrá una <strong>prueba</strong>.</strong> Tendréis que mirar dibujos, colocar piezas, usar números y colores y hablar con vuestro <strong>equipo</strong>. No pasa nada si algo cuesta. Podemos <strong>repetir la explicación</strong> y usar apoyos visuales. Lo importante es <strong>participar</strong> y ayudarse unas personas a otras.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="legal-highlight" style="margin-top: 1.5rem;">
+                    <i class="fas fa-tag"></i>
+                    <span><span class="tag dua">DUA</span> Esta versión parte del texto original y se adapta con apoyo de <strong>ChatGPT</strong> a un registro de lectura fácil, para alumnado con discapacidad intelectual.</span>
+                </div>
+              </div>
+              </div>
+
+        <!-- Diapositiva 6: Recurso 1 - Audio -->
+        <div class="slide" id="slide-6">
+            <div class="slide-content" aria-label="Diapositiva 6: Recurso Audio" role="region">
+                <h2 class="slide-title"><i class="fas fa-headphones"></i> Recurso 1: Audio–narración accesible</h2>
+                
+                <div class="instrumentos-block-vertical" style="margin-top: 1.5rem;">
+                    <h3><i class="fas fa-bullseye"></i> Objetivo DUA</h3>
+                    <div class="instrumentos-cards-vertical">
+                        <div class="instrumento-card-vertical">
+                            <div class="instrumento-title">FORMATO AUDITIVO</div>
+                            <ul>
+                                <li>Ofrecer la explicación en formato auditivo</li>
+                                <li>Para alumnado con dificultades lectoras</li>
+                                <li>Para alumnado con fatiga visual</li>
+                                <li>Para alumnado que prefiere aprender escuchando</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top: 2rem;">
+                    <h3 class="datos-title" style="text-align: center; margin-bottom: 1.5rem;"><i class="fas fa-microphone"></i> Guion del audio generado con ChatGPT</h3>
+                    
+                    <div style="max-width: 900px; margin: 0 auto;">
+                        <div style="padding: 1.5rem; background: rgba(34, 197, 94, 0.1); border-radius: 12px; border-left: 4px solid #22c55e; margin-bottom: 1rem;">
+                            <i class="fas fa-quote-left" style="color: #22c55e; font-size: 2rem; float: left; margin-right: 1rem; margin-top: 0.5rem;"></i>
+                            <p style="margin: 0; font-size: 1.05rem; line-height: 1.7; color: #e0e0ff;">Hola, soy tu profe y hoy te voy a contar qué es <strong>"El archivo de la historia"</strong>.</p>
+                        </div>
+                        
+                        <div style="padding: 1.5rem; background: rgba(34, 197, 94, 0.1); border-radius: 12px; border-left: 4px solid #22c55e; margin-bottom: 1rem;">
+                            <i class="fas fa-quote-left" style="color: #22c55e; font-size: 2rem; float: left; margin-right: 1rem; margin-top: 0.5rem;"></i>
+                            <p style="margin: 0; font-size: 1.05rem; line-height: 1.7; color: #e0e0ff;">Imagina que entramos en una gran sala llena de cajas. Cada caja representa una <strong>época de la historia</strong>: los dinosaurios, la Edad de Piedra, la Edad de los Metales, la Edad Antigua, la Edad Media, la Edad Moderna, la Edad Contemporánea y la Era Digital.</p>
+                        </div>
+                        
+                        <div style="padding: 1.5rem; background: rgba(34, 197, 94, 0.1); border-radius: 12px; border-left: 4px solid #22c55e; margin-bottom: 1rem;">
+                            <i class="fas fa-quote-left" style="color: #22c55e; font-size: 2rem; float: left; margin-right: 1rem; margin-top: 0.5rem;"></i>
+                            <p style="margin: 0; font-size: 1.05rem; line-height: 1.7; color: #e0e0ff;">En cada época habrá un <strong>desafío</strong>. Tendremos que observar, probar, colocar piezas, usar números y colores y hablar en equipo para encontrar la solución. No estás solo: trabajamos <strong>juntos</strong>.</p>
+              </div>
+                        
+                        <div style="padding: 1.5rem; background: rgba(34, 197, 94, 0.1); border-radius: 12px; border-left: 4px solid #22c55e; margin-bottom: 1rem;">
+                            <i class="fas fa-quote-left" style="color: #22c55e; font-size: 2rem; float: left; margin-right: 1rem; margin-top: 0.5rem;"></i>
+                            <p style="margin: 0; font-size: 1.05rem; line-height: 1.7; color: #e0e0ff;">Cada reto superado abre una parte nueva del archivo y nos ayuda a entender cómo la ciencia, la tecnología, el arte y las matemáticas han cambiado a lo largo del tiempo.</p>
+              </div>
+                        
+                        <div style="padding: 1.5rem; background: rgba(34, 197, 94, 0.1); border-radius: 12px; border-left: 4px solid #22c55e;">
+                            <i class="fas fa-quote-left" style="color: #22c55e; font-size: 2rem; float: left; margin-right: 1rem; margin-top: 0.5rem;"></i>
+                            <p style="margin: 0; font-size: 1.05rem; line-height: 1.7; color: #e0e0ff;">Puedes escuchar este audio todas las veces que necesites. Yo estaré contigo para explicarlo de nuevo, con calma, y para adaptar las pruebas para que <strong>tú también puedas participar</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top: 1.5rem; padding: 1rem; background: rgba(56, 189, 248, 0.1); border-radius: 10px; border: 1px dashed rgba(56, 189, 248, 0.4);">
+                    <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem;">
+                        <i class="fas fa-tools" style="color: #38bdf8; font-size: 1.2rem;"></i>
+                        <h3 style="margin: 0; color: #fff; font-size: 1rem;"><strong>Herramientas IAG utilizadas</strong></h3>
+                    </div>
+                    <div class="adaptaciones-steam-grid-3col" style="grid-template-columns: 1fr; margin-top: 0.5rem;">
+                        <div class="adaptacion-steam-card" style="min-height: auto; padding: 1rem 1.2rem; max-width: 100%;">
+                            <i class="fas fa-robot" style="margin-bottom: 0.5rem;"></i>
+                            <div class="adaptacion-steam-title" style="margin-bottom: 0.4rem;">ChatGPT</div>
+                            <div class="adaptacion-steam-desc" style="font-size: 0.95rem; line-height: 1.5;">Para adaptar y simplificar el guion oral a partir del texto original del TFM<br><span class='ejemplo'>Ej: Transformación del texto escrito en un guion conversacional y accesible</span></div>
+                        </div>
+                    </div>
+                    <p style="margin: 0.8rem 0 0 0; color: #e0e0ff; font-size: 0.85rem; padding-left: 2rem;">
+                        <i class="fas fa-info-circle"></i> <strong>Nota:</strong> El guion generado con ChatGPT puede convertirse a audio usando herramientas de síntesis de voz o lectura en voz alta. Todo el contenido está basado en el TFM.
+                    </p>
+                </div>
+              </div>
+              </div>
+
+        <!-- Diapositiva 7: Recurso 2 - Infografía -->
+        <div class="slide" id="slide-7">
+            <div class="slide-content" aria-label="Diapositiva 7: Recurso Infografía" role="region">
+                <h2 class="slide-title"><i class="fas fa-image"></i> Recurso 2: Infografía – Línea del tiempo</h2>
+                
+                <div class="instrumentos-block-vertical" style="margin-top: 1.5rem;">
+                    <h3><i class="fas fa-bullseye"></i> Objetivo DUA</h3>
+                    <div class="instrumentos-cards-vertical">
+                        <div class="instrumento-card-vertical">
+                            <div class="instrumento-title">FORMATO VISUAL</div>
+                            <ul>
+                                <li>Transformar la explicación verbal en mapa visual</li>
+                                <li>Apoyado en iconos e imágenes de cada era</li>
+                                <li>Para alumnado con mejor canal visual</li>
+                                <li>Para anticipar la estructura de la actividad</li>
+              </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top: 2rem;">
+                    <h3 class="datos-title" style="text-align: center; margin-bottom: 1.5rem;"><i class="fas fa-list"></i> Contenido de la infografía: Las 8 eras históricas</h3>
+                    <p style="text-align: center; margin-bottom: 1.5rem; color: #e0e0ff; font-size: 0.95rem;">Estructura generada con <strong>ChatGPT</strong> basada en el TFM</p>
+                    
+                    <div class="adaptaciones-steam-grid-3col" style="grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.5rem;">
+                        <div class="adaptacion-steam-card" style="text-align: center; padding: 1.2rem 0.8rem;">
+                            <i class="fas fa-bone" style="font-size: 2rem; color: #ff77c6; margin-bottom: 0.5rem;"></i>
+                            <div class="adaptacion-steam-title" style="font-size: 0.9rem; margin-bottom: 0.3rem;">Era Dinosaurios</div>
+                            <div class="adaptacion-steam-desc" style="font-size: 0.8rem; line-height: 1.3;"><em>Paleontología y clasificación</em></div>
+                        </div>
+                        <div class="adaptacion-steam-card" style="text-align: center; padding: 1.2rem 0.8rem;">
+                            <i class="fas fa-hammer" style="font-size: 2rem; color: #ff77c6; margin-bottom: 0.5rem;"></i>
+                            <div class="adaptacion-steam-title" style="font-size: 0.9rem; margin-bottom: 0.3rem;">Edad de Piedra</div>
+                            <div class="adaptacion-steam-desc" style="font-size: 0.8rem; line-height: 1.3;"><em>Herramientas líticas y fuego</em></div>
+                        </div>
+                        <div class="adaptacion-steam-card" style="text-align: center; padding: 1.2rem 0.8rem;">
+                            <i class="fas fa-coins" style="font-size: 2rem; color: #ff77c6; margin-bottom: 0.5rem;"></i>
+                            <div class="adaptacion-steam-title" style="font-size: 0.9rem; margin-bottom: 0.3rem;">Edad de los Metales</div>
+                            <div class="adaptacion-steam-desc" style="font-size: 0.8rem; line-height: 1.3;"><em>Metalurgia y primeras tecnologías</em></div>
+                        </div>
+                        <div class="adaptacion-steam-card" style="text-align: center; padding: 1.2rem 0.8rem;">
+                            <i class="fas fa-landmark" style="font-size: 2rem; color: #ff77c6; margin-bottom: 0.5rem;"></i>
+                            <div class="adaptacion-steam-title" style="font-size: 0.9rem; margin-bottom: 0.3rem;">Edad Antigua</div>
+                            <div class="adaptacion-steam-desc" style="font-size: 0.8rem; line-height: 1.3;"><em>Números y arquitectura</em></div>
+                        </div>
+                        <div class="adaptacion-steam-card" style="text-align: center; padding: 1.2rem 0.8rem;">
+                            <i class="fas fa-chess-rook" style="font-size: 2rem; color: #ff77c6; margin-bottom: 0.5rem;"></i>
+                            <div class="adaptacion-steam-title" style="font-size: 0.9rem; margin-bottom: 0.3rem;">Edad Media</div>
+                            <div class="adaptacion-steam-desc" style="font-size: 0.8rem; line-height: 1.3;"><em>Óptica y color</em></div>
+                        </div>
+                        <div class="adaptacion-steam-card" style="text-align: center; padding: 1.2rem 0.8rem;">
+                            <i class="fas fa-microscope" style="font-size: 2rem; color: #ff77c6; margin-bottom: 0.5rem;"></i>
+                            <div class="adaptacion-steam-title" style="font-size: 0.9rem; margin-bottom: 0.3rem;">Edad Moderna</div>
+                            <div class="adaptacion-steam-desc" style="font-size: 0.8rem; line-height: 1.3;"><em>Inventos y mecanismos</em></div>
+                        </div>
+                        <div class="adaptacion-steam-card" style="text-align: center; padding: 1.2rem 0.8rem;">
+                            <i class="fas fa-industry" style="font-size: 2rem; color: #ff77c6; margin-bottom: 0.5rem;"></i>
+                            <div class="adaptacion-steam-title" style="font-size: 0.9rem; margin-bottom: 0.3rem;">Edad Contemporánea</div>
+                            <div class="adaptacion-steam-desc" style="font-size: 0.8rem; line-height: 1.3;"><em>Electricidad y producción</em></div>
+                        </div>
+                        <div class="adaptacion-steam-card" style="text-align: center; padding: 1.2rem 0.8rem;">
+                            <i class="fas fa-laptop-code" style="font-size: 2rem; color: #ff77c6; margin-bottom: 0.5rem;"></i>
+                            <div class="adaptacion-steam-title" style="font-size: 0.9rem; margin-bottom: 0.3rem;">Era Digital</div>
+                            <div class="adaptacion-steam-desc" style="font-size: 0.8rem; line-height: 1.3;"><em>Programación y futuro</em></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top: 1.5rem; padding: 1.2rem; background: rgba(120, 119, 198, 0.15); border-radius: 12px; border: 2px dashed rgba(183, 170, 255, 0.4);">
+                    <p style="margin: 0 0 0.5rem 0; color: #fff; font-weight: 600;"><i class="fas fa-lightbulb"></i> <strong>Diseño propuesto:</strong></p>
+                    <p style="margin: 0; color: #e0e0ff; font-size: 0.95rem; line-height: 1.6;">
+                        En el centro, un icono de <strong>archivo/maleta del tiempo</strong> con el título <em>"El archivo de la historia: 8 eras, 8 desafíos STEAM"</em>. Alrededor, una <strong>línea de tiempo circular</strong> con 8 nodos, cada uno con nombre de la era, icono y breve foco STEAM.
+                    </p>
+                </div>
+
+                <div style="margin-top: 1.5rem; padding: 1rem; background: rgba(56, 189, 248, 0.1); border-radius: 10px; border: 1px dashed rgba(56, 189, 248, 0.4);">
+                    <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem;">
+                        <i class="fas fa-tools" style="color: #38bdf8; font-size: 1.2rem;"></i>
+                        <h3 style="margin: 0; color: #fff; font-size: 1rem;"><strong>Herramientas IAG utilizadas</strong></h3>
+                    </div>
+                    <div class="adaptaciones-steam-grid-3col" style="grid-template-columns: 1fr; margin-top: 0.5rem;">
+                        <div class="adaptacion-steam-card" style="min-height: auto; padding: 1rem 1.2rem; max-width: 100%;">
+                            <i class="fas fa-robot" style="margin-bottom: 0.5rem;"></i>
+                            <div class="adaptacion-steam-title" style="margin-bottom: 0.4rem;">ChatGPT</div>
+                            <div class="adaptacion-steam-desc" style="font-size: 0.95rem; line-height: 1.5;">Para definir el texto breve de cada era, la estructura visual y el contenido de la infografía basado en el TFM<br><span class='ejemplo'>Ej: Generación de la estructura de línea de tiempo con 8 eras históricas y sus focos STEAM</span></div>
+                        </div>
+                    </div>
+                    <p style="margin: 0.8rem 0 0 0; color: #e0e0ff; font-size: 0.85rem; padding-left: 2rem;">
+                        <i class="fas fa-info-circle"></i> <strong>Nota:</strong> La estructura y contenido fueron generados con ChatGPT basándose en el TFM. La visualización puede realizarse con herramientas de diseño gráfico tradicionales o editores de texto.
+                    </p>
+                </div>
+              </div>
+        </div>
+
+        <!-- Diapositiva 8: Recurso 3 - Tabla -->
+        <div class="slide" id="slide-8">
+            <div class="slide-content" aria-label="Diapositiva 7: Recurso Tabla" role="region">
+                <h2 class="slide-title"><i class="fas fa-table"></i> Recurso 3: Tabla–resumen de adaptaciones DUA</h2>
+                
+                <div class="instrumentos-block-vertical" style="margin-top: 1.5rem;">
+                    <h3><i class="fas fa-bullseye"></i> Objetivo DUA</h3>
+                    <div class="instrumentos-cards-vertical">
+                        <div class="instrumento-card-vertical">
+                            <div class="instrumento-title">FORMATO TEXTUAL/TABLA</div>
+                            <ul>
+                                <li>Sintetizar las 23 adaptaciones inclusivas del TFM</li>
+                                <li>Formato claro y utilizable por el profesorado</li>
+                                <li>Referencia rápida para adaptaciones específicas</li>
+                                <li>Basado en la defensa del TFM</li>
+                            </ul>
+                        </div>
+                    </div>
+              </div>
+
+                <div style="margin-top: 1.5rem;">
+                    <p style="margin-bottom: 1rem; color: #e0e0ff; text-align: center;">A partir de la diapositiva de <em>"23 adaptaciones para la diversidad"</em> de la presentación del TFM, se ha generado con <strong>ChatGPT</strong> una tabla simplificada:</p>
+                    
+                    <div style="overflow-x: auto; margin-top: 1rem;">
+                        <table style="width: 100%; border-collapse: collapse; font-size: 0.95rem;">
+                <thead>
+                  <tr>
+                                    <th style="background: rgba(120, 119, 198, 0.4); padding: 1rem; border: 1px solid rgba(183, 170, 255, 0.4); text-align: center; font-size: 1rem;">Perfil / necesidad</th>
+                                    <th style="background: rgba(120, 119, 198, 0.4); padding: 1rem; border: 1px solid rgba(183, 170, 255, 0.4); text-align: center; font-size: 1rem;">Adaptaciones clave</th>
+                                    <th style="background: rgba(120, 119, 198, 0.4); padding: 1rem; border: 1px solid rgba(183, 170, 255, 0.4); text-align: center; font-size: 1rem;">Ejemplo en el escape room</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                                    <td style="padding: 1rem; border: 1px solid rgba(183, 170, 255, 0.3); background: rgba(20, 20, 40, 0.6); text-align: center; vertical-align: middle; width: 20%;">
+                                        <i class="fas fa-puzzle-piece" style="font-size: 1.5rem; color: #ff77c6; display: block; margin-bottom: 0.5rem;"></i>
+                                        <strong style="font-size: 1rem;">TEA</strong>
+                                    </td>
+                                    <td style="padding: 1rem; border: 1px solid rgba(183, 170, 255, 0.3); vertical-align: middle;">Estructura predecible, agenda visual, espacio de calma.</td>
+                                    <td style="padding: 1rem; border: 1px solid rgba(183, 170, 255, 0.3); vertical-align: middle;">Secuencia de pasos con pictogramas y rincón tranquilo donde retirarse si hay sobrecarga.</td>
+                  </tr>
+                  <tr>
+                                    <td style="padding: 1rem; border: 1px solid rgba(183, 170, 255, 0.3); background: rgba(20, 20, 40, 0.6); text-align: center; vertical-align: middle;">
+                                        <i class="fas fa-low-vision" style="font-size: 1.5rem; color: #ff77c6; display: block; margin-bottom: 0.5rem;"></i>
+                                        <strong style="font-size: 1rem;">Discapacidad visual</strong>
+                                    </td>
+                                    <td style="padding: 1rem; border: 1px solid rgba(183, 170, 255, 0.3); vertical-align: middle;">Material táctil, braille, alto contraste, tamaño de letra ampliado.</td>
+                                    <td style="padding: 1rem; border: 1px solid rgba(183, 170, 255, 0.3); vertical-align: middle;">Tarjetas en relieve para las pistas y códigos con texturas distintas.</td>
+                  </tr>
+                  <tr>
+                                    <td style="padding: 1rem; border: 1px solid rgba(183, 170, 255, 0.3); background: rgba(20, 20, 40, 0.6); text-align: center; vertical-align: middle;">
+                                        <i class="fas fa-ear-deaf" style="font-size: 1.5rem; color: #ff77c6; display: block; margin-bottom: 0.5rem;"></i>
+                                        <strong style="font-size: 1rem;">Discapacidad auditiva</strong>
+                                    </td>
+                                    <td style="padding: 1rem; border: 1px solid rgba(183, 170, 255, 0.3); vertical-align: middle;">Pistas visuales, subtítulos, apoyos escritos.</td>
+                                    <td style="padding: 1rem; border: 1px solid rgba(183, 170, 255, 0.3); vertical-align: middle;">Normas del juego y pistas clave en pictogramas y texto, sin depender del audio.</td>
+                  </tr>
+                  <tr>
+                                    <td style="padding: 1rem; border: 1px solid rgba(183, 170, 255, 0.3); background: rgba(20, 20, 40, 0.6); text-align: center; vertical-align: middle;">
+                                        <i class="fas fa-wheelchair" style="font-size: 1.5rem; color: #ff77c6; display: block; margin-bottom: 0.5rem;"></i>
+                                        <strong style="font-size: 1rem;">Discapacidad motriz</strong>
+                                    </td>
+                                    <td style="padding: 1rem; border: 1px solid rgba(183, 170, 255, 0.3); vertical-align: middle;">Piezas grandes, pulsadores, accesibilidad física.</td>
+                                    <td style="padding: 1rem; border: 1px solid rgba(183, 170, 255, 0.3); vertical-align: middle;">Cajas y candados accesibles sobre mesa a la altura adecuada; mecanismos fáciles de manipular.</td>
+                  </tr>
+                  <tr>
+                                    <td style="padding: 1rem; border: 1px solid rgba(183, 170, 255, 0.3); background: rgba(20, 20, 40, 0.6); text-align: center; vertical-align: middle;">
+                                        <i class="fas fa-brain" style="font-size: 1.5rem; color: #ff77c6; display: block; margin-bottom: 0.5rem;"></i>
+                                        <strong style="font-size: 1rem;">Dificultades cognitivas</strong>
+                                    </td>
+                                    <td style="padding: 1rem; border: 1px solid rgba(183, 170, 255, 0.3); vertical-align: middle;">Instrucciones simplificadas, tiempo extra, apoyos visuales.</td>
+                                    <td style="padding: 1rem; border: 1px solid rgba(183, 170, 255, 0.3); vertical-align: middle;">Versiones en lectura fácil de cada reto y guía paso a paso con ejemplos.</td>
+                  </tr>
+                  <tr>
+                                    <td style="padding: 1rem; border: 1px solid rgba(183, 170, 255, 0.3); background: rgba(20, 20, 40, 0.6); text-align: center; vertical-align: middle;">
+                                        <i class="fas fa-palette" style="font-size: 1.5rem; color: #ff77c6; display: block; margin-bottom: 0.5rem;"></i>
+                                        <strong style="font-size: 1rem;">Daltonismo (ColorADD)</strong>
+                                    </td>
+                                    <td style="padding: 1rem; border: 1px solid rgba(183, 170, 255, 0.3); vertical-align: middle;">Simbología complementaria a los colores.</td>
+                                    <td style="padding: 1rem; border: 1px solid rgba(183, 170, 255, 0.3); vertical-align: middle;">Códigos de color traducidos a símbolos ColorADD en candados y tarjetas.</td>
+                  </tr>
+                </tbody>
+              </table>
+                    </div>
+                </div>
+
+                <div class="legal-highlight" style="margin-top: 1.5rem;">
+                    <i class="fas fa-tools"></i>
+                    <span><strong>Herramienta IAG utilizada:</strong> <strong>ChatGPT</strong> para transformar el texto de la diapositiva del TFM en una tabla breve y clara.</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Diapositiva 9: Resumen y conclusiones -->
+        <div class="slide" id="slide-9">
+            <div class="slide-content" aria-label="Diapositiva 8: Resumen" role="region">
+                <h2 class="slide-title"><i class="fas fa-check-circle"></i> Resumen: Recursos multimodales generados</h2>
+                
+                <div class="metodologia-grid-top" style="margin-top: 2rem;">
+                    <div class="metodologia-card enfoque">
+                        <h3><i class="fas fa-headphones"></i> Recurso 1: Audio</h3>
+                        <p><strong>Formato:</strong> Narración accesible<br>
+                        <strong>Herramienta:</strong> ChatGPT<br>
+                        <strong>Objetivo DUA:</strong> Múltiples medios de representación (auditivo)</p>
+                    </div>
+                    <div class="metodologia-card analisis">
+                        <h3><i class="fas fa-image"></i> Recurso 2: Infografía</h3>
+                        <p><strong>Formato:</strong> Línea del tiempo visual<br>
+                        <strong>Herramienta:</strong> ChatGPT<br>
+                        <strong>Objetivo DUA:</strong> Múltiples medios de representación (visual)</p>
+                    </div>
+                </div>
+                <div class="metodologia-grid-top" style="margin-top: 1.5rem;">
+                    <div class="metodologia-card enfoque">
+                        <h3><i class="fas fa-table"></i> Recurso 3: Tabla</h3>
+                        <p><strong>Formato:</strong> Resumen de adaptaciones<br>
+                        <strong>Herramienta:</strong> ChatGPT<br>
+                        <strong>Objetivo DUA:</strong> Múltiples medios de representación (textual)</p>
+                    </div>
+                    <div class="metodologia-card analisis">
+                        <h3><i class="fas fa-robot"></i> Herramienta IAG</h3>
+                        <p><strong>ChatGPT</strong> utilizado para:<br>
+                        • Adaptar textos a lectura fácil<br>
+                        • Generar guiones de audio<br>
+                        • Crear estructuras visuales<br>
+                        • Sintetizar información en tablas</p>
+                    </div>
+                </div>
+
+                <div class="contexto-destacado" style="margin-top: 2rem;">
+                    <div class="contexto-item">
+                        <i class="fas fa-universal-access"></i>
+                        <strong>Todos los recursos están basados en el TFM "APRENDER HACIENDO" y garantizan el principio DUA de múltiples medios de representación, permitiendo que cada estudiante acceda al contenido según sus preferencias y necesidades.</strong>
+                    </div>
+                </div>
+
+                <div style="margin-top: 1.5rem; text-align: center;">
+                    <a href="https://archivotiempo.github.io/defensa.github.io/" target="_blank" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.7rem 1.3rem; background: rgba(120, 119, 198, 0.15); border: 2px dashed #b7aaff; border-radius: 10px; color: #b7aaff; text-decoration: none; font-size: 0.9rem; font-weight: 600; transition: all 0.3s ease;">
+                        <i class="fas fa-link"></i>
+                        <span>Acceder a la presentación completa del TFM</span>
+                    </a>
+                </div>
+
+                <div class="legal-highlight" style="margin-top: 1.5rem;">
+                    <i class="fas fa-lightbulb"></i>
+                    <span><strong>Conclusión:</strong> El enriquecimiento multimodal con ChatGPT permite transformar un contenido único en múltiples formatos accesibles, cumpliendo con el principio DUA y mejorando la inclusión educativa.</span>
+                </div>
+            </div>
+          </div>
+      </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Configuración específica para esta presentación
+        document.addEventListener('DOMContentLoaded', function() {
+            // Asegurar que el contador se actualice correctamente
+            const slides = document.querySelectorAll('.slide');
+            const totalSlides = slides.length;
+            
+            // Actualizar el contador inicial
+            const slideCounter = document.getElementById('slideCounter');
+            if (slideCounter) {
+                slideCounter.textContent = `1 / ${totalSlides}`;
+            }
+        });
+    </script>
+</body>
+</html>
