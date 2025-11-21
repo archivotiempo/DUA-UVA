@@ -524,6 +524,30 @@
           </div>
       </div>
 
+    <script>
+        // Script de diagnóstico y fallback
+        window.addEventListener('load', function() {
+            // Verificar que el CSS se haya cargado
+            const testElement = document.createElement('div');
+            testElement.style.position = 'absolute';
+            testElement.style.visibility = 'hidden';
+            document.body.appendChild(testElement);
+            
+            // Asegurar que la primera slide sea visible
+            const firstSlide = document.querySelector('.slide');
+            if (firstSlide && !firstSlide.classList.contains('active')) {
+                firstSlide.classList.add('active');
+            }
+            
+            // Verificar que los elementos críticos existan
+            const slides = document.querySelectorAll('.slide');
+            if (slides.length === 0) {
+                console.error('No se encontraron slides en el documento');
+            } else {
+                console.log(`Se encontraron ${slides.length} slides`);
+            }
+        });
+    </script>
     <script src="script.js"></script>
     <script>
         // Configuración específica para esta presentación
@@ -536,6 +560,12 @@
             const slideCounter = document.getElementById('slideCounter');
             if (slideCounter) {
                 slideCounter.textContent = `1 / ${totalSlides}`;
+            }
+            
+            // Fallback: asegurar que la primera slide esté visible
+            const firstSlide = document.querySelector('.slide');
+            if (firstSlide) {
+                firstSlide.classList.add('active');
             }
         });
     </script>

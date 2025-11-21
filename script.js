@@ -22,14 +22,50 @@ const navTitle = document.getElementById('navTitle');
 
 // Inicialización
 document.addEventListener('DOMContentLoaded', function() {
-    slides = document.querySelectorAll('.slide');
-    totalSlides = slides.length; // Ahora será 18 slides
-    updateSlideCounter();
-    showSlide(0);
-    setupEventListeners();
-    setupKeyboardShortcuts();
-    setupTouchGestures();
-    initializeCharts();
+    try {
+        slides = document.querySelectorAll('.slide');
+        totalSlides = slides.length;
+        
+        // Asegurar que al menos la primera slide esté visible
+        if (slides.length > 0 && !slides[0].classList.contains('active')) {
+            slides[0].classList.add('active');
+        }
+        
+        updateSlideCounter();
+        showSlide(0);
+        
+        // Intentar inicializar funciones adicionales, pero no bloquear si fallan
+        try {
+            setupEventListeners();
+        } catch(e) {
+            console.warn('Error en setupEventListeners:', e);
+        }
+        
+        try {
+            setupKeyboardShortcuts();
+        } catch(e) {
+            console.warn('Error en setupKeyboardShortcuts:', e);
+        }
+        
+        try {
+            setupTouchGestures();
+        } catch(e) {
+            console.warn('Error en setupTouchGestures:', e);
+        }
+        
+        try {
+            initializeCharts();
+        } catch(e) {
+            console.warn('Error en initializeCharts:', e);
+        }
+    } catch(error) {
+        console.error('Error en la inicialización:', error);
+        // Asegurar que al menos la primera slide sea visible
+        const firstSlide = document.querySelector('.slide');
+        if (firstSlide) {
+            firstSlide.classList.add('active');
+        }
+    }
 });
 
 // Funciones de inicialización
@@ -42,9 +78,15 @@ function initializePresentation() {
 
 function setupEventListeners() {
     // Botones de navegación
-    prevBtn.addEventListener('click', previousSlide);
-    nextBtn.addEventListener('click', nextSlide);
-    fullscreenBtn.addEventListener('click', toggleFullscreen);
+    if (prevBtn) {
+        prevBtn.addEventListener('click', previousSlide);
+    }
+    if (nextBtn) {
+        nextBtn.addEventListener('click', nextSlide);
+    }
+    if (fullscreenBtn) {
+        fullscreenBtn.addEventListener('click', toggleFullscreen);
+    }
     
     // Eventos de teclado
     document.addEventListener('keydown', handleKeyPress);
@@ -97,12 +139,18 @@ function goToSlide(slideNumber) {
 }
 
 function updateSlideCounter() {
-    slideCounter.textContent = `${currentSlide + 1} / ${totalSlides}`;
+    if (slideCounter) {
+        slideCounter.textContent = `${currentSlide + 1} / ${totalSlides}`;
+    }
 }
 
 function updateNavigationButtons() {
-    prevBtn.disabled = currentSlide === 0;
-    nextBtn.disabled = currentSlide === totalSlides - 1;
+    if (prevBtn) {
+        prevBtn.disabled = currentSlide === 0;
+    }
+    if (nextBtn) {
+        nextBtn.disabled = currentSlide === totalSlides - 1;
+    }
 }
 
 // Manejo de teclado
